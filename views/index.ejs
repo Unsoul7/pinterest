@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/global.css">
+    <link rel="stylesheet" href="/stylesheets/responsive.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Pinterest_Logo.svg/1200px-Pinterest_Logo.svg.png"
+                alt="logo">
+            <a href="/" class="">Today</a>
+            <a href="/explore">Watch</a>
+            <a href="/newpost">Explore</a>
+        </div>
+
+        <div>
+            <a href="/" class="">About</a>
+            <a href="/explore">Business</a>
+            <a href="/newpost">Press</a>
+            <button id="login" onclick="openlogin()">Log in</button>
+            <button onclick="opensignup()">Sign up</button>
+        </div>
+    </nav>
+
+    <div class="login-box" id="login-box">
+        <img onclick="closelogin()" class="close" src="/images/assets/close.png" alt="">
+   
+
+        <div class="auth-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="logo">
+            <h1>Welcome to Pinterest</h1>
+        </div>
+        <form action="/login" method="post">
+            <p>Username</p>
+            <input type="text" placeholder="Username" name="username" >
+            <p>Password</p>
+            <input type="password" placeholder="Password" name="password" >
+            <a href="">Forget Your Password?</a>
+            <button type="submit">Log in</button>
+            <a onclick="opensignup()">Not on Pinterest? Sign up</a>
+        </form>
+    </div>
+
+    <div class="login-box" id="signup-box">
+        <img onclick="closesignup()" class="close" src="/images/assets/close.png" alt="">
+
+        <div class="auth-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="logo">
+            <h1>Welcome to Pinterest</h1>
+            <p>Find new ideas to try</p>
+        </div>
+        <form action="/signup" method="post">
+            <p>Email address</p>
+            <input type="text" placeholder="Email Address" name="email" >
+            <p>Username</p>
+            <input type="text" placeholder="Username" name="username" >
+            <p>Password</p>
+            <input type="password" placeholder="Password" name="password" >
+            <p>Date of Birth</p>
+            <input type="date" name="dob" id="dob">
+            <button type="submit">Continue</button>
+            <a onclick="openlogin()">Already on Pinterest? Log in</a>
+        </form>
+    </div>
+
+    <div class="copyright">
+        <h1>Pinterest Website Made by <br> <span>Aman Prajapati</span></h1>
+    </div>
+    <script src="/javascripts/script.js"></script>
+</body>
+
+</html>

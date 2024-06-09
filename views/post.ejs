@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/global.css">
+  <title>Pinterest</title>
+</head>
+
+<body>
+
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="logo">
+    <a href="/home" class="">Home</a>
+    <a href="/explore">Explore</a>
+    <a href="/create">Create</a>
+    <input type="text" placeholder="Search" class="search-item" id="search">
+    <img src="/images/assets/bell.png" alt="">
+    <div class="profile" onclick="window.open('/profile','_self')">
+        
+    </div>
+  </nav>
+
+  <div class="post-container">
+    <div class="post-image">
+        <img src="/images/data/<%= postdata.image %>" alt="">
+    </div>
+    <div class="post-data"> 
+        <h1><%= postdata.title %></h1>
+        <p><%= postdata.description %></p>
+        <div class="post-user">
+            <div class="profile"><img src="/images/dps/<%= postuser.dp %>" alt=""></div>
+            <h3><%= postuser.username %></h3>
+        </div>
+    </div>
+
+  </div>
+  
+</body>
+
+</html>

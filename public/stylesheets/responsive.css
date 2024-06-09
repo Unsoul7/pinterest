@@ -1,0 +1,24 @@
+@media only screen and (max-width:380px) {
+    nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav div button {
+        margin-top: 50px;
+    }
+
+    .login-box {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .login-box form{
+        width: 100%;
+    }
+}

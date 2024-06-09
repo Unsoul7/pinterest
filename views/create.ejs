@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/global.css">
+  <title>Pinterest</title>
+</head>
+
+<body>
+  <nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="logo">
+    <a href="/home" class="">Home</a>
+    <a href="/explore">Explore</a>
+    <a href="/newpost">Create</a>
+    <input type="text" placeholder="Search" class="search-item" id="search">
+    <img src="/images/assets/bell.png" alt="">
+    <div class="profile">
+        <img src="/images/dps/<%= dp %>" alt="">
+    </div>
+</nav>
+
+<div class="create-pin">
+    <p>Create Pin</p>
+</div>
+<form class="upload-section" action="/upload" method="post" enctype="multipart/form-data">
+    <div class="up-sec">
+        <label for="image">
+            Click or Tap to Upload File
+            <input type="file" name="image" id="image">
+        </label>
+    </div>
+    <div class="up-form">
+        <div>
+            <p>Title</p>
+            <input type="text" id="title" placeholder="Add a title" name="title">
+        </div>
+
+        <div>
+            <p>Description</p>
+            <textarea name="desc" id="description" placeholder="Description"></textarea>
+        </div>
+        <div>
+            <p>Link</p>
+            <input type="text" placeholder="Add a Link" name="link">
+        </div>
+        <div>
+            <p>Tag Topics</p>
+            <input type="text" placeholder="Search for a Tag" name="tags">
+        </div>
+    </div>
+    <button id="up-pin" type="submit">Create Pin</button>
+</form>
+</body>
+
+</html>

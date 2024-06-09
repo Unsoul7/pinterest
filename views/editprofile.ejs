@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/global.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+
+    <nav>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="logo">
+        <a href="/home" class="">Home</a>
+        <a href="/explore">Explore</a>
+        <a href="/create">Create</a>
+        <input type="text" placeholder="Search" class="search-item" id="search">
+        <img src="/images/assets/bell.png" alt="">
+        <div class="profile" onclick="window.open('/profile','_self')">
+            <img src="/images/dps/<%= dp %>" alt="">
+        </div>
+    </nav>
+    <div class="container">
+
+        <form action="/updateprofile" enctype="multipart/form-data" method="post" class="edit-profile">
+            <div id="change-dp">
+                <label for="image">
+                    Change Profile Picture
+                    <input type="file" name="dp" id="image">
+                </label>
+            </div>
+            <p>Full Name</p>
+            <input type="text" placeholder="Full Name" name="fullname">
+            <p>Email address</p>
+            <input type="text" placeholder="Email Address" name="email">
+            <p>Username</p>
+            <input type="text" placeholder="Username" name="username">
+            <!-- <p>Password</p>
+            <input type="password" placeholder="Password" name="password"> -->
+            <p>Date of Birth</p>
+            <input type="date" name="dob" id="dob">
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
