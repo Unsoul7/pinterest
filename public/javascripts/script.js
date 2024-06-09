@@ -11,3 +11,5 @@ const opensignup = () => {
 const closesignup = () => {
   document.getElementById('signup-box').style.display = 'none'
 }
+
+// pass = VEtMqX3ID7FPJeYl

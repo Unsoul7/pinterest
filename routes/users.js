@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const plm = require('passport-local-mongoose')
 const Schema = mongoose.Schema
-mongoose.connect('mongodb://localhost:27017/pinterestdata')
+mongoose.connect('mongodb+srv://pubgkiidsecondaali:VEtMqX3ID7FPJeYl@pinterestproject.yhx0bxx.mongodb.net/?retryWrites=true&w=majority&appName=PinterestProject/pinterest')
 
 const userModel = new Schema({
     email : {type : String, unique : true},
